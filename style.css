@@ -95,7 +95,6 @@ a {
   color: red;
 }
 
-/* Main Section */
 .main {
   background-image: url("./images/mobile_intro_bg.png");
   background-repeat: no-repeat;
@@ -113,7 +112,8 @@ a {
 
 .second-header {
   color: #ec5242;
-  font-size: 30px;
+  font-size: 4rem;
+  font-weight: 700;
   font-family: 'Lato', sans-serif;
 }
 
@@ -489,6 +489,24 @@ a {
     margin-bottom: 50px;
   }
 
+  .past-projects {
+    margin-top: 50px;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 46vh;
+    gap: 20px;
+  }
+
+  .project {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    height: 80%;
+  }
+
+
   .program-activities-details {
     align-items: center;
     justify-content: center;
@@ -575,5 +593,225 @@ a {
     display: flex;
     flex-direction: column;
     font-size: 11px;
+  }
+}
+
+.speaker {
+  background: #fff;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.speaker-container {
+  margin: 40px 10px;
+}
+
+.speaker .main-section-h1 {
+  color: #1d1d1d;
+}
+
+.speaker-list {
+  margin: 40px auto;
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speaker-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.speaker-img {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  box-shadow: -10px -10px 5px -3px rgba(0, 0, 0, 0.28);
+}
+
+.speaker-header {
+  font-family: var(--font-roboto);
+  color: #1d1d1d;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.speaker-profession {
+  color: #ec5242;
+  font-size: 11px;
+  margin: 5px 0 5px 0;
+  font-style: italic;
+}
+
+.speaker-line {
+  width: 25px;
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+  margin: 5px 0;
+}
+
+.speaker-description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 10px;
+  background-color: #fff;
+  border: 2px solid #d3d3d3;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  /* SPEAKER */
+
+  .speaker {
+    margin: 2% 0;
+  }
+
+  .speaker-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .speaker-list {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speaker-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .speaker-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  .speaker-header {
+    font-size: 1.2rem;
+  }
+
+  .speaker-description {
+    font-size: 0.9rem;
+  }
+
+  .speaker-profession {
+    font-size: 1rem;
+  }
+
+  .speaker-line {
+    border-bottom: 2px solid #1d1d1d;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  /* SPEAKER */
+  .speaker-list {
+    width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-cover {
+    background: url(./images/about_bg_01.png);
+  }
+
+  .second-header {
+    background: url(./images/motivation.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  .about-logo {
+    width: 10%;
+  }
+
+  .invitation-about {
+    color: #272a31;
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+    margin: 30px auto;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+  }
+
+  .contact-us {
+    color: #272a31;
+    width: 70%;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .email {
+    color: #272a31;
+    text-align: center;
+  }
+
+  .section-2 {
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .about-h2 {
+    text-align: center;
+  }
+
+  .about-activities {
+    text-align: center;
+    width: 59%;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 0.875em;
+    line-height: 24px;
+  }
+
+  .about-logo {
+    width: 30%;
+    overflow: clip;
+    margin: 20px auto;
+  }
+
+  .about-partner {
+    display: none;
+  }
+
+  .about-footer {
+    background-color: #272a31;
+    display: flex;
+  }
+
+  .footer-image {
+    background-image: url('./images/logo2.png');
+    width: 233px;
+  }
+
+  .white-font {
+    color: white;
+  }
+
+  .footer-about-text {
+    display: block;
+  }
+
+  .more-btn {
+    display: none;
   }
 }
