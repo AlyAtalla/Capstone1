@@ -596,21 +596,21 @@ a {
   }
 }
 
-.speaker {
+.musician {
   background: #fff;
   margin: 60px auto;
   text-align: center;
 }
 
-.speaker-container {
+.musician-container {
   margin: 40px 10px;
 }
 
-.speaker .main-section-h1 {
+.musician .main-section-h1 {
   color: #1d1d1d;
 }
 
-.speaker-list {
+.musician-list {
   margin: 40px auto;
   width: 300px;
   height: auto;
@@ -619,41 +619,41 @@ a {
   align-items: center;
 }
 
-.speaker-content {
+.musician-content {
   display: flex;
   flex-direction: column;
   text-align: left;
 }
 
-.speaker-img {
+.musician-img {
   width: 80px;
   height: 80px;
   margin-right: 15px;
   box-shadow: -10px -10px 5px -3px rgba(0, 0, 0, 0.28);
 }
 
-.speaker-header {
+.musician-header {
   font-family: var(--font-roboto);
   color: #1d1d1d;
   font-size: 1rem;
   font-weight: bold;
 }
 
-.speaker-profession {
+.musician-profession {
   color: #ec5242;
   font-size: 11px;
   margin: 5px 0 5px 0;
   font-style: italic;
 }
 
-.speaker-line {
+.musician-line {
   width: 25px;
   border: none;
   border-bottom: 1px solid #d3d3d3;
   margin: 5px 0;
 }
 
-.speaker-description {
+.musician-description {
   font-size: 1rem;
   font-weight: 300;
 }
@@ -671,19 +671,19 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  /* SPEAKER */
+  /* musician */
 
-  .speaker {
+  .musician {
     margin: 2% 0;
   }
 
-  .speaker-container {
+  .musician-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
 
-  .speaker-list {
+  .musician-list {
     width: 300px;
     height: auto;
     display: flex;
@@ -691,38 +691,38 @@ a {
     align-items: center;
   }
 
-  .speaker-content {
+  .musician-content {
     display: flex;
     flex-direction: column;
     text-align: left;
   }
 
-  .speaker-img {
+  .musician-img {
     width: 100px;
     height: 100px;
-    margin-right: 20px;
   }
 
-  .speaker-header {
+  .musician-header {
     font-size: 1.2rem;
   }
 
-  .speaker-description {
+  .musician-description {
     font-size: 0.9rem;
   }
 
-  .speaker-profession {
+  .musician-profession {
     font-size: 1rem;
   }
 
-  .speaker-line {
+  .musician-line {
     border-bottom: 2px solid #1d1d1d;
   }
 }
 
 @media screen and (min-width: 920px) {
-  /* SPEAKER */
-  .speaker-list {
+
+  /* musician */
+  .musician-list {
     width: 500px;
   }
 }

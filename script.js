@@ -20,40 +20,28 @@ liknsMob.forEach((link) => {
 
 const speakerData = [
   {
-    img: './images/speaker_01.png',
-    name: 'Yochai Benkler',
-    profession: 'Harvard Law School Professor',
-    description: 'Focusing on a common approach in a networked environment, he created the concept of co-production based on sharing, such as open source software and Wikipedia. (Main publications: The Wealth of Networks, Penguin and Levidon)',
+    img: './images/ali.webp',
+    name: 'Aly Atalla',
+    profession: 'Violinst',
+    description: 'Studied at Conservatory of Alexandria and graduated in 2016 specializing in baroque ',
   },
   {
-    img: './images/speaker_02.png',
-    name: 'Kilnam Chon',
-    profession: 'Korea Advanced Institute of Science and Technology (KAIST) Emeritus Professor',
-    description: 'It opened the Internet era in earnest by developing Asia\'s first internet protocol network SDN and leading the nation\'s first dedicated line Internet connection in 1990.',
+    img: './images/gamal.webp',
+    name: 'Mohammad Jamal',
+    profession: 'Recorder Player',
+    description: 'Master of a wide  repretoir from a rich variety of barouque and romantic pieces',
   },
   {
-    img: './images/speaker_03.png',
-    name: 'Sohyeong Noh',
-    profession: 'Art Center Nabi Director, CC Korea Director',
-    description: 'As the author of <Digital Art, Art of Our Time>, he opened \'Art Center Nabi\', the first digital art institution in Korea in 2000, and is currently working there.',
+    img: './images/adel.jpg',
+    name: 'Daniel',
+    profession: 'Pianist',
+    description: 'Classical and Jazz enthusiast',
   },
   {
-    img: './images/speaker_04.png',
-    name: 'Julia Reda',
-    profession: 'Representative of the Young Pirates of Europe',
-    description: 'European integration and young people\'s participation in politics and democracy online are major concerns, and he has published a report that will potentially affect the revision of the European Union\'s copyright law in July.',
-  },
-  {
-    img: './images/speaker_05.png',
-    name: 'Lila Tretikov',
-    profession: 'Secretary General of the Wikimedia Foundation',
-    description: 'Lila Tretikov is the Executive Director of the Wikimedia Foundation, the non-profit organization that runs Wikipedia. Wikipedia is provided free of charge in 290 languages each month to over 100 million people, nearly half of the world\'s population.',
-  },
-  {
-    img: './images/speaker_06.png',
-    name: 'Ryan Merkley',
-    profession: 'Creative Commons CEO, former Mozilla Foundation COO',
-    description: 'He led the open source project at the Mozilla Foundation and joined the CC CEO in 2014. He has been active in open movements such as open government and open source.',
+    img: './images/halim.webp',
+    name: 'Mohammad Halim',
+    profession: 'Conductor',
+    description: 'Very Talented conductor with years of experience in Musical teaching ',
   },
 ];
 
@@ -61,13 +49,13 @@ const container = document.getElementById('container');
 
 function data() {
   speakerData.forEach((speaker) => {
-    container.innerHTML += `<div class="speaker-list">
-    <img src="${speaker.img}" alt="" class="speaker-img">
-    <div class="speaker-content">
-      <h2 class="speaker-header">${speaker.name}</h2>
-      <h3 class="speaker-profession">${speaker.profession}</h3>
-      <hr class="speaker-line">
-      <p class="speaker-description">${speaker.description}</p>
+    container.innerHTML += `<div class="musician-list">
+    <img src="${speaker.img}" alt="" class="musician-img">
+    <div class="musician-content">
+      <h2 class="musician-header">${speaker.name}</h2>
+      <h3 class="musician-profession">${speaker.profession}</h3>
+      <hr class="musician-line">
+      <p class="musician-description">${speaker.description}</p>
     </div>
   </div>`;
   });
@@ -121,7 +109,7 @@ createProgramActivity();
 
 
 const moreButton = document.querySelector('.more-btn');
-const speakers = Array.from(document.querySelectorAll('.speaker-list'));
+const speakers = Array.from(document.querySelectorAll('.musicians-list'));
 
 moreButton.addEventListener('click', () => {
   speakers.slice(-4).forEach((speaker) => {
