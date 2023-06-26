@@ -340,7 +340,7 @@ a {
 }
 
 .footer-image {
-  background-image: url('./images/logo.png');
+  background-image: url('./images/logo3.png');
   height: 75px;
   width: 156px;
   background-size: contain;
@@ -563,7 +563,7 @@ a {
     gap: 23px;
   }
 
-  .footer img {
+  .footer-img {
     height: 3rem;
   }
 
