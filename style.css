@@ -506,7 +506,6 @@ a {
     height: 80%;
   }
 
-
   .program-activities-details {
     align-items: center;
     justify-content: center;
@@ -671,7 +670,6 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  /* musician */
 
   .musician {
     margin: 2% 0;
@@ -721,7 +719,6 @@ a {
 
 @media screen and (min-width: 920px) {
 
-  /* musician */
   .musician-list {
     width: 500px;
   }
@@ -781,12 +778,6 @@ a {
     padding-top: 30px;
     font-size: 0.875em;
     line-height: 24px;
-  }
-
-  .about-logo {
-    width: 30%;
-    overflow: clip;
-    margin: 20px auto;
   }
 
   .about-partner {
