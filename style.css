@@ -315,7 +315,7 @@ a {
 
 .partner {
   text-align: center;
-  background-color: #272a31;
+  background-color: #3e4044;
   padding: 40px 10px;
 }
 
@@ -352,6 +352,19 @@ a {
 .footer-text {
   display: flex;
   flex-direction: column;
+}
+
+.more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 10px;
+  margin: 0 auto !important;
+  background-color: #fff;
+  border: 2px solid #d3d3d3;
+  padding: 20px 40px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -479,6 +492,14 @@ a {
     margin-left: 14rem;
   }
 
+  .musician-list:nth-child(5) {
+    margin-right: 5.5rem;
+  }
+
+  .musician-list:nth-child(6) {
+    margin-right: 14.5rem;
+  }
+
   .program-activities {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -590,8 +611,9 @@ a {
     background-image: url("./images/logo3.png");
   }
 
-  .footer-about {
-    margin-top: 10px;
+  .footer-copyright {
+    color: black;
+    font-size: 15px;
   }
 
   .footer-text {

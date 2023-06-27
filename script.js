@@ -38,6 +38,18 @@ const musicianData = [
     profession: 'Conductor',
     description: 'Very Talented conductor with years of experience in Musical teaching ',
   },
+  {
+    img: './images/jenny.png',
+    name: 'Jenny Stevenson',
+    profession: 'Flute player',
+    description: 'incredible talent with wind instruments ',
+  },
+  {
+    img: './images/mark.png',
+    name: 'Mark val',
+    profession: 'even coordinator',
+    description: 'our Active Event manager ',
+  },
 ];
 
 const container = document.getElementById('container');
@@ -101,3 +113,38 @@ function createProgramActivity() {
 }
 
 createProgramActivity();
+
+const moreButton = document.querySelector('.more-btn');
+const speakers = Array.from(document.querySelectorAll('.musician-list'));
+
+moreButton.addEventListener('click', () => {
+  speakers.slice(-4).forEach((speaker) => {
+    speaker.classList.toggle('hidden');
+  });
+
+  if (moreButton.textContent === 'More') {
+    moreButton.textContent = 'Less';
+  } else {
+    moreButton.textContent = 'More';
+  }
+});
+
+function hideSpeakers() {
+  if (window.innerWidth < 768) {
+    speakers.slice(-4).forEach((speaker) => {
+      speaker.classList.add('hidden');
+    });
+    moreButton.textContent = 'More';
+  } else {
+    speakers.forEach((speaker) => {
+      speaker.classList.remove('hidden');
+    });
+    moreButton.textContent = 'More';
+  }
+}
+
+hideSpeakers();
+
+window.addEventListener('resize', () => { // check window on resizing
+  hideSpeakers();
+});
