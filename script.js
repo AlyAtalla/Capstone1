@@ -18,7 +18,7 @@ liknsMob.forEach((link) => {
   link.addEventListener('click', menuClose);
 });
 
-const speakerData = [
+const musicianData = [
   {
     img: './images/ali.webp',
     name: 'Aly Atalla',
@@ -48,14 +48,14 @@ const speakerData = [
 const container = document.getElementById('container');
 
 function data() {
-  speakerData.forEach((speaker) => {
+  musicianData.forEach((musician) => {
     container.innerHTML += `<div class="musician-list">
-    <img src="${speaker.img}" alt="" class="musician-img">
+    <img src="${musician.img}" alt="" class="musician-img">
     <div class="musician-content">
-      <h2 class="musician-header">${speaker.name}</h2>
-      <h3 class="musician-profession">${speaker.profession}</h3>
+      <h2 class="musician-header">${musician.name}</h2>
+      <h3 class="musician-profession">${musician.profession}</h3>
       <hr class="musician-line">
-      <p class="musician-description">${speaker.description}</p>
+      <p class="musician-description">${musician.description}</p>
     </div>
   </div>`;
   });
@@ -106,39 +106,3 @@ function createProgramActivity() {
 }
 
 createProgramActivity();
-
-
-const moreButton = document.querySelector('.more-btn');
-const speakers = Array.from(document.querySelectorAll('.musicians-list'));
-
-moreButton.addEventListener('click', () => {
-  speakers.slice(-4).forEach((speaker) => {
-    speaker.classList.toggle('hidden');
-  });
-
-  if (moreButton.textContent === 'More') {
-    moreButton.textContent = 'Less';
-  } else {
-    moreButton.textContent = 'More';
-  }
-});
-
-function hideSpeakers() {
-  if (window.innerWidth < 768) {
-    speakers.slice(-4).forEach((speaker) => {
-      speaker.classList.add('hidden');
-    });
-    moreButton.textContent = 'More';
-  } else {
-    speakers.forEach((speaker) => {
-      speaker.classList.remove('hidden');
-    });
-    moreButton.textContent = 'More';
-  }
-}
-
-hideSpeakers();
-
-window.addEventListener('resize', () => { // check window on resizing
-  hideSpeakers();
-});
