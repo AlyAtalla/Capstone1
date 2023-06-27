@@ -670,7 +670,6 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-
   .musician {
     margin: 2% 0;
   }
@@ -718,7 +717,6 @@ a {
 }
 
 @media screen and (min-width: 920px) {
-
   .musician-list {
     width: 500px;
   }
