@@ -34,7 +34,7 @@
 
 ![Snapshot](./images/snappshot.jpeg)
 ![Snapshot](./images/snapshot2.jpeg)
-![Snapshot](./images/snappshot3.jpeg)
+![Snapshot](./images/snapshot3.jpeg)
 
 ## 🛠 Built With <a name="built-with"></a>
 
