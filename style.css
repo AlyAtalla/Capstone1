@@ -87,10 +87,6 @@ a {
   font-size: 30px;
 }
 
-.logo {
-  display: none;
-}
-
 #about-link {
   color: red;
 }
@@ -339,21 +335,19 @@ a {
   filter: grayscale(100%);
 }
 
-.footer-image {
-  background-image: url('./images/logo3.png');
-  height: 75px;
-  width: 156px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.footer {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
 }
 
-.footer-copyright {
-  font-size: x-small;
+.footer img {
+  height: 80px;
 }
 
-.footer-about-text {
-  display: none;
+.footer-text {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -408,15 +402,15 @@ a {
     border-bottom: 1px solid #d3d3d3;
     box-shadow: none;
     height: 60px;
-    padding: 0 10%;
     gap: 11rem;
+    padding-right: 8rem;
   }
 
   .mobile-list {
     display: flex;
     justify-content: space-between;
     background: white;
-    position: static;
+    position: relative;
     flex-direction: row;
     align-items: center;
     height: auto;
@@ -439,7 +433,6 @@ a {
 
   .button {
     border: 3px solid #ec5242;
-    padding: 5px 10px;
     color: #ec5242;
   }
 
@@ -478,6 +471,10 @@ a {
     margin-bottom: 20px;
   }
 
+  .musician-list:first-child {
+    margin-left: 14rem;
+  }  
+
   .program-activities {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -493,15 +490,19 @@ a {
     margin-top: 50px;
     margin-bottom: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     width: 90%;
     height: 46vh;
-    gap: 20px;
+    gap: 10px;
+    margin-left: 4rem;
   }
 
   .project {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-size: cover;
     height: 80%;
   }
@@ -582,6 +583,7 @@ a {
 
   .footer-img {
     height: 3rem;
+    background-image: url("./images/logo3.png");
   }
 
   .footer-about {
@@ -678,6 +680,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    justify-content: center;
   }
 
   .musician-list {
@@ -776,10 +779,6 @@ a {
     padding-top: 30px;
     font-size: 0.875em;
     line-height: 24px;
-  }
-
-  .about-partner {
-    display: none;
   }
 
   .about-footer {
