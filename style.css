@@ -685,18 +685,6 @@ a {
   font-weight: 300;
 }
 
-.more-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  gap: 10px;
-  background-color: #fff;
-  border: 2px solid #d3d3d3;
-  padding: 20px 40px;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 768px) {
   .musician {
     margin: 2% 0;
