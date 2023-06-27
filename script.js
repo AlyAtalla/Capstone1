@@ -1,7 +1,6 @@
 const menuMob = document.getElementById('mob-menu');
 const menu = document.getElementById('menu');
 const close = document.getElementById('close-button');
-const liknsMob = document.querySelectorAll('.navigation-list');
 
 function menuOpen() {
   menuMob.style.display = 'flex';

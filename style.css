@@ -304,6 +304,10 @@ a {
   margin: 10px auto;
 }
 
+.logo {
+  margin-left: 6.5rem;
+}
+
 .about-footer {
   display: grid;
   grid-template-columns: 60% 40%;
