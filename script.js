@@ -14,10 +14,6 @@ function menuClose() {
 menu.addEventListener('click', menuOpen);
 close.addEventListener('click', menuClose);
 
-liknsMob.forEach((link) => {
-  link.addEventListener('click', menuClose);
-});
-
 const musicianData = [
   {
     img: './images/ali.webp',
