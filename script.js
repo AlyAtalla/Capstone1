@@ -63,7 +63,6 @@ function data() {
 
 data();
 
-
 const programActivitiesData = [
   {
     icon: 'images/program_icon_01.png',
